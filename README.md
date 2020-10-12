@@ -13,7 +13,7 @@ If you are on Windows this may be useful to you since the program tmux does not 
 
 Linux and Mac OS users have tmux, and so typically, a vim user could make hotkeys to create a session and send remotely send it commands, as if you had alt-tabbed over to that terminal and typed it yourself.
 
-Each vim that is launched with a --servername argument can be treated as a 'session'.  The relevant tmux command ls or list-sessions would let us decide whether or not to create a session, but vim's ``serverlist()`` function can achieve a similar effect as tmux's ls.
+Each vim that is launched with a --servername argument can be treated as a 'session'.  The relevant tmux command ``ls`` or ``list-sessions`` would let us decide whether or not to create a session, but vim's ``serverlist()`` function can achieve a similar effect as tmux's ls.
 
 The tmux command ``create-pane`` is analogous to vim's (relatively new) ``:term`` feature.
 

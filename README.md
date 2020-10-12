@@ -30,7 +30,7 @@ While editing any file inside of a certain directory, it adds a mapping to run b
 ```vim
     aug EditingBlenderPython
         au!
-        au BufNew,BufReadPost */bpy/** nmap <F12> :HaveTermSay foobar "c:\\Program\ Files\\Blender\ Foundation\\Blender\ 2.90\\blender.exe"<CR>
+        au BufNew,BufReadPost */bpy/** nmap <F12> :HaveTermSay foo "c:\\Program\ Files\\Blender\ Foundation\\Blender\ 2.90\\blender.exe"<CR>
     aug END
 ```
 

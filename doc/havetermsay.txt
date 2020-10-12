@@ -1,0 +1,32 @@
+====================================================================
+CONTENTS                                            *HavetermsayContents*
+
+    1. Usage ................ |HavetermsayUsage|
+    2. Mappings ............. |HavetermsayMappings|
+    3. License .............. |HavetermsayLicense|
+    4. Bugs ................. |HavetermsayBugs|
+    5. Contributing ......... |HavetermsayContributing|
+    6. Changelog ............ |HavetermsayChangelog|
+    7. Credits .............. |HavetermsayCredits|
+                                                      *HavetermsayUsage*
+
+usage example:
+
+HaveTermSay <server-name> <what-to-say>
+
+server name is what to call the server
+
+what to say has to be escaped as per a vim command dealing with windows paths.  basically that means it sucks but here is an example that *works for me*:
+
+aug EditingBlenderPython
+    au!
+    au BufNew,BufReadPost */bpy/** nmap <F12> :HaveTermSay foobar "c:\\Program\ Files\\Blender\ Foundation\\Blender\ 2.90\\blender.exe"<CR>
+aug END
+
+
+Note the escaped quotes and the escaped spaces and the escaped path separators.
+
+What the above snippet from my vimrc does is if I'm editing a file inside the bpy folder (where i keep scripts for blender) then assign f12 in normal mode to run blender in a terminal(vim) called foobar
+
+
+vim:tw=78:ts=8:noet:ft=help:norl:
